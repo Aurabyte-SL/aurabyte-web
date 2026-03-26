@@ -46,7 +46,7 @@ export function Header() {
             whileTap={{ scale: 0.95 }}
           >
             <Image
-              src="/AuraByte-logo.png"
+              src="/AuraByte-logo2.png"
               alt="Aurabyte Logo"
               fill
               className="object-contain"
