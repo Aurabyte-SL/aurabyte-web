@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react"
 import { motion } from "framer-motion"
-import { Globe, Smartphone, BarChart3, Gamepad2, Cpu, Cloud } from "lucide-react"
+import { Globe, Smartphone, BarChart3, Gamepad2, Cpu, Palette } from "lucide-react"
 
 const services = [
   {
@@ -36,10 +36,10 @@ const services = [
     gradient: "from-amber-500/20 to-orange-500/20",
   },
   {
-    icon: Cloud,
-    title: "Cloud Solutions",
-    description: "Scalable cloud infrastructure, migration services, and DevOps practices for reliable deployments.",
-    gradient: "from-sky-500/20 to-blue-500/20",
+    icon: Palette,
+    title: "Product Design",
+    description: "User-centric design that blends aesthetics with functionality to create intuitive and engaging digital products.",
+    gradient: "from-pink-500/20 to-rose-500/20",
   },
 ]
 

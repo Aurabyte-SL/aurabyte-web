@@ -2,35 +2,34 @@
 
 import { motion } from "framer-motion"
 import { useRef, useState } from "react"
+import Image from "next/image"
 import { WaveShader } from "./wave-shader"
 
 const partners = [
-  { name: "TechVentures", logo: "TV" },
-  { name: "GlobalSoft", logo: "GS" },
-  { name: "InnovateCo", logo: "IC" },
-  { name: "DataDriven", logo: "DD" },
-  { name: "CloudFirst", logo: "CF" },
-  { name: "NextLevel", logo: "NL" },
+  { name: "BlankSpace", logo: "/partners/blankspace-logo.png" },
+  { name: "BS", logo: "/partners/bs-logo.png" },
+  { name: "InnoHub", logo: "/partners/inno-hub-logo.jpg" },
+  { name: "Kizuri International", logo: "/partners/kizuri-international.jpg" },
 ]
 
 const testimonials = [
   {
     quote: "Aurabyte transformed our digital presence completely. Their team delivered beyond our expectations.",
     author: "Sarah Chen",
-    role: "CTO, TechVentures",
-    company: "TV",
+    role: "CTO, BlankSpace",
+    company: "BlankSpace",
   },
   {
     quote: "The mobile app they built has become essential to our operations. Exceptional quality and support.",
     author: "Michael Rodriguez",
-    role: "CEO, GlobalSoft",
-    company: "GS",
+    role: "CEO, InnoHub",
+    company: "InnoHub",
   },
   {
     quote: "Their data analytics solution gave us insights we never knew we needed. Game-changing results.",
     author: "Emily Watson",
-    role: "Head of Data, InnovateCo",
-    company: "IC",
+    role: "Head of Operations, Kizuri International",
+    company: "Kizuri",
   },
 ]
 
@@ -77,10 +76,10 @@ function TestimonialCard({ testimonial, index }: { testimonial: typeof testimoni
         </p>
         <div className="mt-6 flex items-center gap-4">
           <motion.div 
-            className="h-12 w-12 rounded-full bg-gradient-to-br from-accent/30 to-cyan-500/30 flex items-center justify-center border border-accent/30"
+            className="h-12 w-12 rounded-full bg-gradient-to-br from-accent/30 to-cyan-500/30 flex items-center justify-center border border-accent/30 overflow-hidden"
             whileHover={{ scale: 1.1 }}
           >
-            <span className="text-sm font-bold text-accent">{testimonial.company}</span>
+            <span className="text-sm font-bold text-accent">{testimonial.company.slice(0, 2).toUpperCase()}</span>
           </motion.div>
           <div>
             <p className="font-semibold text-foreground">{testimonial.author}</p>
@@ -118,13 +117,15 @@ export function Partners() {
               <motion.div
                 key={`${partner.name}-${index}`}
                 whileHover={{ scale: 1.05, y: -5 }}
-                className="flex-shrink-0 flex items-center justify-center rounded-xl border border-border bg-card p-6 hover:border-accent/50 transition-colors min-w-[180px]"
+                className="flex-shrink-0 flex items-center justify-center rounded-xl border border-border bg-card p-6 hover:border-accent/50 transition-colors min-w-[200px]"
               >
-                <div className="flex items-center gap-3">
-                  <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-accent/20 to-cyan-500/20 flex items-center justify-center border border-accent/20">
-                    <span className="text-sm font-bold text-accent">{partner.logo}</span>
-                  </div>
-                  <span className="text-sm font-medium">{partner.name}</span>
+                <div className="relative h-12 w-32">
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    fill
+                    className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  />
                 </div>
               </motion.div>
             ))}

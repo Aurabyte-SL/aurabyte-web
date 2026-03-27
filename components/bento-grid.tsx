@@ -8,7 +8,7 @@ import {
   BarChart3, 
   Gamepad2, 
   Brain, 
-  Cloud,
+  Palette,
   Zap,
   Shield
 } from "lucide-react"
@@ -183,10 +183,10 @@ export function BentoGridSection() {
           icon={<Brain className="h-6 w-6 text-accent" />}
         />
         <BentoGridItem
-          title="Cloud Solutions"
-          description="Scalable cloud infrastructure and DevOps for enterprise needs."
+          title="Product Design"
+          description="User-centric design that blends aesthetics with functionality for intuitive digital products."
           header={<CircuitBackground />}
-          icon={<Cloud className="h-6 w-6 text-accent" />}
+          icon={<Palette className="h-6 w-6 text-accent" />}
         />
       </BentoGrid>
     </section>

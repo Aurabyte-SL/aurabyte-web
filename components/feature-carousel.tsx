@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { ChevronLeft, ChevronRight, Globe, Smartphone, BarChart3, Gamepad2, Brain, Cloud } from "lucide-react"
+import { ChevronLeft, ChevronRight, Globe, Smartphone, BarChart3, Gamepad2, Brain, Palette } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { WarpBackground } from "./warp-background"
 
@@ -74,15 +74,15 @@ const features = [
   },
   {
     id: 6,
-    title: "Cloud Solutions",
-    subtitle: "Scalable Infrastructure",
-    description: "Design, deploy, and manage cloud infrastructure that scales with your business. AWS, GCP, and Azure expertise for optimal performance, security, and cost efficiency.",
-    icon: Cloud,
-    color: "from-sky-500 to-cyan-500",
+    title: "Product Design",
+    subtitle: "Aesthetics Meets Functionality",
+    description: "User-centric design that blends aesthetics with functionality to create intuitive and engaging digital products. We focus on user research, prototyping, and high-fidelity UI design.",
+    icon: Palette,
+    color: "from-pink-500 to-rose-500",
     stats: [
-      { label: "Uptime", value: "99.99%" },
-      { label: "Cost Reduction", value: "40%" },
-      { label: "Deployments", value: "500+" },
+      { label: "Designs Completed", value: "200+" },
+      { label: "User Growth", value: "45%" },
+      { label: "Design Awards", value: "12" },
     ]
   },
 ]

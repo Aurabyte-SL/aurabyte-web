@@ -1,4 +1,4 @@
-import { Globe, Smartphone, BarChart3, Gamepad2, Cpu, Cloud } from "lucide-react"
+import { Globe, Smartphone, BarChart3, Gamepad2, Cpu, Palette } from "lucide-react"
 
 const services = [
   {
@@ -27,9 +27,9 @@ const services = [
     description: "Intelligent systems that automate processes, predict outcomes, and enhance decision-making capabilities.",
   },
   {
-    icon: Cloud,
-    title: "Cloud Solutions",
-    description: "Scalable cloud infrastructure, migration services, and DevOps practices for reliable deployments.",
+    icon: Palette,
+    title: "Product Design",
+    description: "User-centric design that blends aesthetics with functionality to create intuitive and engaging digital products.",
   },
 ]
 
