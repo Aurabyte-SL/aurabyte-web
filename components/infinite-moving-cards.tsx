@@ -3,6 +3,7 @@
 import { cn } from "@/lib/utils"
 import React, { useEffect, useState } from "react"
 import { AuroraShader } from "./aurora-shader"
+import { DottedSurface } from "./dotted-surface"
 
 export const InfiniteMovingCards = ({
   items,
@@ -157,8 +158,8 @@ export function TestimonialsSection() {
   ]
 
   return (
-    <section className="py-20 bg-background relative overflow-hidden">
-      <AuroraShader className="opacity-50" />
+    <section className="py-20 bg-transparent relative overflow-hidden">
+      <DottedSurface className="opacity-30" />
       <div className="container mx-auto px-4 mb-12">
         <h2 className="text-3xl md:text-5xl font-bold text-center text-foreground mb-4">
           What Our Clients Say

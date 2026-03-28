@@ -60,7 +60,7 @@ export function Portfolio() {
       : projects.filter((project) => project.category === activeCategory)
 
   return (
-    <section id="portfolio" className="py-24 lg:py-32 bg-secondary/30">
+    <section id="portfolio" className="py-24 lg:py-32 bg-gray-600/30">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-medium uppercase tracking-wider text-accent">Our Work</p>

@@ -166,7 +166,7 @@ export function PortfolioAdvanced() {
       {/* Nebula shader background */}
       <NebulaShader className="opacity-60" />
       {/* Subtle background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/30 to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/10 to-transparent pointer-events-none" />
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div

@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react"
 import { motion, useScroll, useSpring, useTransform } from "framer-motion"
 import { cn } from "@/lib/utils"
 import { CyberGridShader } from "./cyber-grid-shader"
+import { IsoLevelWarp } from "./isometric-wave-grid"
 
 export const TracingBeam = ({
   children,
@@ -148,8 +149,8 @@ export function ProcessSection() {
   ]
 
   return (
-    <section className="py-20 px-4 bg-background relative overflow-hidden" id="process">
-      <CyberGridShader className="opacity-40" />
+    <section className="py-20 px-4 bg-transparent relative overflow-hidden" id="process">
+      <IsoLevelWarp className="opacity-40" color="141, 59, 255" speed={0.5} density={40} />
       <div className="container mx-auto mb-12">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

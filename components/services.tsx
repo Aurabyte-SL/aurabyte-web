@@ -1,4 +1,5 @@
 import { Globe, Smartphone, BarChart3, Gamepad2, Cpu, Palette } from "lucide-react"
+import { AnomalousMatterHero } from "./anomalous-matter"
 
 const services = [
   {
@@ -35,7 +36,8 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="py-24 lg:py-32">
+    <section id="services" className="py-24 lg:py-32 relative overflow-hidden bg-transparent">
+      <AnomalousMatterHero className="opacity-30" />
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-medium uppercase tracking-wider text-accent">What we do</p>

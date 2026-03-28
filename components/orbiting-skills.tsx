@@ -6,6 +6,7 @@ import {
   Globe, Smartphone, BarChart3, Gamepad2, Brain, Cloud,
   Code2, Database, Palette, Shield, Zap, Users
 } from "lucide-react"
+import { DottedSurface } from "./dotted-surface"
 
 interface Skill {
   name: string
@@ -118,7 +119,8 @@ export function OrbitingSkills() {
   ]
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-24 relative overflow-hidden bg-transparent">
+      <DottedSurface className="opacity-20" />
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

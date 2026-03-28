@@ -25,6 +25,7 @@ export function LampEffect({
         speed={0.5}
         density={50}
       />
+      <AnimatedBuildingShapes />
       <div className="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0">
         <motion.div
           initial={{ opacity: 0.5, width: "15rem" }}
@@ -96,7 +97,6 @@ export function LampSection() {
   return (
     <LampEffect>
       <div className="relative z-10">
-        <AnimatedBuildingShapes />
         <motion.h2
         initial={{ opacity: 0.5, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}

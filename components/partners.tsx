@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { useRef, useState } from "react"
 import Image from "next/image"
 import { WaveShader } from "./wave-shader"
+import { IsoLevelWarp } from "./isometric-wave-grid"
 
 const partners = [
   { name: "BlankSpace", logo: "/partners/blankspace-logo.png" },
@@ -93,8 +94,8 @@ function TestimonialCard({ testimonial, index }: { testimonial: typeof testimoni
 
 export function Partners() {
   return (
-    <section id="partners" className="py-24 lg:py-32 relative overflow-hidden">
-      <WaveShader className="opacity-50" />
+    <section id="partners" className="py-24 lg:py-32 relative overflow-hidden bg-transparent">
+      <IsoLevelWarp className="opacity-40" color="17, 142, 88" speed={0.4} density={45} />
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Partners logos */}
         <motion.div
