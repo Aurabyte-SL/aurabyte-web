@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion"
 import { cn } from "@/lib/utils"
+import { IsoLevelWarp } from "./isometric-wave-grid"
+import { AnimatedBuildingShapes } from "./animated-building-shapes"
 
 export function LampEffect({
   children,
@@ -13,10 +15,16 @@ export function LampEffect({
   return (
     <div
       className={cn(
-        "relative flex min-h-[600px] flex-col items-center justify-center overflow-hidden bg-background w-full rounded-md z-0",
+        "relative flex min-h-[800px] flex-col items-center justify-center overflow-hidden bg-background w-full rounded-md z-0",
         className
       )}
     >
+      <IsoLevelWarp 
+        className="opacity-50" 
+        color="141, 59, 255" // Primary Purple RGB
+        speed={0.5}
+        density={50}
+      />
       <div className="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0">
         <motion.div
           initial={{ opacity: 0.5, width: "15rem" }}
@@ -87,7 +95,9 @@ export function LampEffect({
 export function LampSection() {
   return (
     <LampEffect>
-      <motion.h2
+      <div className="relative z-10">
+        <AnimatedBuildingShapes />
+        <motion.h2
         initial={{ opacity: 0.5, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
@@ -112,6 +122,7 @@ export function LampSection() {
         Transform your ideas into digital reality. We craft exceptional experiences
         that drive growth and innovation.
       </motion.p>
+      </div>
     </LampEffect>
   )
 }

@@ -163,8 +163,8 @@ export function BentoGridSection() {
           icon={<Smartphone className="h-6 w-6 text-accent" />}
         />
         <BentoGridItem
-          title="Data Analytics"
-          description="Transform raw data into actionable insights with advanced analytics solutions."
+          title="Consults & Maintenance"
+          description="Expert guidance and ongoing support to keep your systems running smoothly."
           header={<CircuitBackground />}
           icon={<BarChart3 className="h-6 w-6 text-accent" />}
         />
@@ -176,8 +176,8 @@ export function BentoGridSection() {
           icon={<Gamepad2 className="h-6 w-6 text-accent" />}
         />
         <BentoGridItem
-          title="AI & Machine Learning"
-          description="Intelligent solutions that learn, adapt, and automate complex processes."
+          title="AI Agents"
+          description="Build and deploy autonomous AI agents that transform how your business operates."
           header={<WaveBackground />}
           className="md:col-span-2"
           icon={<Brain className="h-6 w-6 text-accent" />}

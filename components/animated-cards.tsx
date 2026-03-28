@@ -19,8 +19,8 @@ const services = [
   },
   {
     icon: BarChart3,
-    title: "Data Analytics",
-    description: "Transform raw data into actionable insights with advanced analytics, visualization, and machine learning solutions.",
+    title: "Consults & Maintenance",
+    description: "Strategic technical consulting and proactive maintenance to keep your digital assets secure and performing at their best.",
     gradient: "from-emerald-500/20 to-green-500/20",
   },
   {
@@ -31,8 +31,8 @@ const services = [
   },
   {
     icon: Cpu,
-    title: "AI & Machine Learning",
-    description: "Intelligent systems that automate processes, predict outcomes, and enhance decision-making capabilities.",
+    title: "AI Agents",
+    description: "Custom AI agents and autonomous workflows designed to handle complex tasks, optimize operations, and scale your business intelligence.",
     gradient: "from-amber-500/20 to-orange-500/20",
   },
   {

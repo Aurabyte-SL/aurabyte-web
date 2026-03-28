@@ -27,7 +27,7 @@ export function HeroAdvanced() {
           }}
         />
         <motion.div
-          className="absolute bottom-1/4 -right-32 w-96 h-96 rounded-full bg-cyan-500/10 blur-[100px]"
+          className="absolute bottom-1/4 -right-32 w-96 h-96 rounded-full bg-primary/10 blur-[100px]"
           animate={{
             x: [0, -50, 0],
             y: [0, -30, 0],
@@ -38,7 +38,7 @@ export function HeroAdvanced() {
             ease: "easeInOut",
           }}
         />
-      </div>
+      </div> 
 
       {/* Grid pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:72px_72px]" />
@@ -50,7 +50,7 @@ export function HeroAdvanced() {
         minSize={0.4}
         maxSize={1}
         particleDensity={50}
-        particleColor="#14b8a6"
+        particleColor="#8D3BFF"
         speed={3}
         className="opacity-30"
       />
@@ -68,7 +68,7 @@ export function HeroAdvanced() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="mb-8 inline-flex items-center gap-2 rounded-full border border-border bg-secondary/50 px-4 py-1.5 text-sm text-muted-foreground"
+              className="mb-8 inline-flex items-center gap-2 rounded-full border border-border bg-gray/20 px-4 py-1.5 text-sm text-muted-foreground"
             >
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
@@ -97,7 +97,7 @@ export function HeroAdvanced() {
                 transition={{ delay: 0.4 }}
                 className="block mt-2"
               >
-                that <NeonText text="transform businesses" className="text-accent" />
+                that <NeonText text="transform businesses" className="text-secondary" />
               </motion.span>
             </h1>
 
@@ -155,7 +155,7 @@ export function HeroAdvanced() {
           </motion.div>
 
           {/* Right content - 3D Sphere */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
@@ -163,7 +163,7 @@ export function HeroAdvanced() {
           >
             <FloatingSphere className="w-full h-[500px]" />
             
-            {/* Floating cards around sphere */}
+            {/* Floating cards around sphere 
             <motion.div
               className="absolute top-20 left-10 bg-card/80 backdrop-blur-sm border border-border rounded-lg p-4 shadow-lg"
               animate={{
@@ -193,7 +193,7 @@ export function HeroAdvanced() {
               <div className="text-sm font-medium">Global Clients</div>
               <div className="text-2xl font-bold text-accent">50+</div>
             </motion.div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
 

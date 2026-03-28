@@ -133,7 +133,7 @@ export function SparklesSection({
         minSize={0.6}
         maxSize={1.4}
         particleDensity={100}
-        particleColor="#14b8a6"
+        particleColor="#A0FF7A"
         speed={2}
       />
       {children}

@@ -57,7 +57,7 @@ export function OrbitalTimeline() {
       <NoiseGradientShader colors={["#030508", "#051015", "#001515"]} className="opacity-70" />
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-16">
-          <p className="text-sm font-medium uppercase tracking-wider text-accent">Our Journey</p>
+          <p className="text-sm font-medium uppercase tracking-wider text-secondary">Our Journey</p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-balance">
             A timeline of innovation and growth
           </h2>
@@ -86,17 +86,18 @@ export function OrbitalTimeline() {
                 key={item.year}
                 className={`absolute flex items-center justify-center w-16 h-16 rounded-full border-2 transition-all duration-500 cursor-pointer ${
                   activeIndex === index
-                    ? "bg-accent border-accent text-accent-foreground scale-125"
-                    : "bg-card border-border text-foreground hover:border-accent/50"
+                    ? "bg-secondary border-secondary text-secondary-foreground"
+                    : "bg-card border-border text-foreground hover:border-secondary/50"
                 }`}
-                style={{
-                  transform: `translate(${x}px, ${y}px)`,
-                }}
-                onClick={() => setActiveIndex(index)}
-                animate={{
+                initial={{ x, y, scale: 1 }}
+                animate={{ 
+                  x, 
+                  y, 
                   scale: activeIndex === index ? 1.25 : 1,
+                  zIndex: activeIndex === index ? 50 : 0
                 }}
                 whileHover={{ scale: 1.1 }}
+                onClick={() => setActiveIndex(index)}
               >
                 <span className="text-sm font-bold">{item.year}</span>
               </motion.button>
@@ -104,41 +105,28 @@ export function OrbitalTimeline() {
           })}
 
           {/* Center content */}
-          <div className="relative z-10 w-[280px] text-center">
+          <div className="relative z-10 w-[300px] h-[150px] flex items-center justify-center text-center">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeIndex}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
+                exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.3 }}
+                className="absolute inset-0 flex flex-col items-center justify-center"
               >
-                <span className="text-4xl font-bold text-accent">
+                <span className="text-4xl font-bold text-secondary">
                   {timelineItems[activeIndex].year}
                 </span>
                 <h3 className="mt-2 text-xl font-semibold">
                   {timelineItems[activeIndex].title}
                 </h3>
-                <p className="mt-2 text-sm text-muted-foreground">
+                <p className="mt-2 text-sm text-muted-foreground max-w-[250px]">
                   {timelineItems[activeIndex].description}
                 </p>
               </motion.div>
             </AnimatePresence>
           </div>
-
-          {/* Animated pulse ring */}
-          <motion.div
-            className="absolute w-[500px] h-[500px] rounded-full border border-accent/30"
-            animate={{
-              scale: [1, 1.1, 1],
-              opacity: [0.3, 0.1, 0.3],
-            }}
-            transition={{
-              duration: 3,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-          />
         </div>
       </div>
     </section>

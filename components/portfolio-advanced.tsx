@@ -141,7 +141,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
             {project.tags.map((tag) => (
               <span
                 key={tag}
-                className="inline-flex items-center rounded-full bg-secondary/80 px-2.5 py-0.5 text-xs font-medium text-muted-foreground border border-border/50"
+                className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-muted-foreground border border-border/50"
               >
                 {tag}
               </span>

@@ -49,7 +49,7 @@ export function Contact() {
       {/* Particle field shader background */}
       <ParticleFieldShader className="opacity-70" />
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/30 to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/10 to-transparent pointer-events-none" />
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2">
@@ -79,7 +79,7 @@ export function Contact() {
                   className="flex items-center gap-4 group"
                 >
                   <motion.div 
-                    className="flex h-12 w-12 items-center justify-center rounded-lg bg-secondary border border-border group-hover:border-accent/50 transition-colors"
+                    className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 border border-border group-hover:border-accent/50 transition-colors"
                     whileHover={{ scale: 1.1 }}
                   >
                     <item.icon className="h-5 w-5 text-accent" />
@@ -93,7 +93,7 @@ export function Contact() {
             </div>
 
             {/* Decorative element */}
-            <motion.div
+            {/* <motion.div
               className="mt-12 p-6 rounded-2xl border border-border bg-card/50 backdrop-blur-sm"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -107,7 +107,7 @@ export function Contact() {
               <p className="text-sm text-muted-foreground">
                 We typically respond within 24 hours. For urgent matters, feel free to call us directly.
               </p>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
 
           {/* Contact Form */}
@@ -139,7 +139,7 @@ export function Contact() {
                       placeholder="John Doe"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="bg-secondary border-border focus:border-accent transition-colors"
+                      className="bg-gray-700/20 border-border focus:border-accent transition-colors"
                     />
                   </motion.div>
                   <motion.div 
@@ -158,7 +158,7 @@ export function Contact() {
                       placeholder="john@example.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="bg-secondary border-border focus:border-accent transition-colors"
+                      className="bg-gray-700/20 border-border focus:border-accent transition-colors"
                     />
                   </motion.div>
                 </div>
@@ -178,7 +178,7 @@ export function Contact() {
                     placeholder="Your company name"
                     value={formData.company}
                     onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                    className="bg-secondary border-border focus:border-accent transition-colors"
+                    className="bg-gray-700/20 border-border focus:border-accent transition-colors"
                   />
                 </motion.div>
 
@@ -198,7 +198,7 @@ export function Contact() {
                     rows={5}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="bg-secondary border-border resize-none focus:border-accent transition-colors"
+                    className="bg-gray-700/20 border-border resize-none focus:border-accent transition-colors"
                   />
                 </motion.div>
 

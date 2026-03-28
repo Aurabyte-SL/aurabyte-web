@@ -35,15 +35,15 @@ const features = [
   },
   {
     id: 3,
-    title: "Data Analytics",
-    subtitle: "Insights That Drive Growth",
-    description: "Transform raw data into actionable insights. Our analytics solutions help businesses make informed decisions with real-time dashboards, predictive modeling, and custom reporting.",
+    title: "Consults & Maintenance",
+    subtitle: "Expert Guidance & Support",
+    description: "Strategic consulting and proactive maintenance to ensure your digital infrastructure remains secure, scalable, and optimized for long-term success.",
     icon: BarChart3,
     color: "from-green-500 to-emerald-500",
     stats: [
-      { label: "Data Points Analyzed", value: "10B+" },
-      { label: "ROI Improvement", value: "340%" },
-      { label: "Dashboards Built", value: "200+" },
+      { label: "Systems Maintained", value: "500+" },
+      { label: "Uptime guarantee", value: "99.9%" },
+      { label: "Response Time", value: "<1hr" },
     ]
   },
   {
@@ -61,15 +61,15 @@ const features = [
   },
   {
     id: 5,
-    title: "AI & Machine Learning",
-    subtitle: "Intelligent Solutions",
-    description: "Leverage the power of artificial intelligence to automate processes, enhance decision-making, and create intelligent products. Custom ML models, NLP, and computer vision solutions.",
+    title: "AI Agents",
+    subtitle: "Autonomous Workflows",
+    description: "Build and deploy autonomous AI agents that handle complex tasks, optimize operations, and transform how your business operates at scale.",
     icon: Brain,
     color: "from-violet-500 to-purple-500",
     stats: [
-      { label: "Models Deployed", value: "100+" },
-      { label: "Accuracy Rate", value: "97%" },
-      { label: "Processing Speed", value: "10ms" },
+      { label: "Agents Deployed", value: "100+" },
+      { label: "Tasks Automated", value: "5M+" },
+      { label: "Efficiency Gain", value: "400%" },
     ]
   },
   {
