@@ -7,10 +7,12 @@ import { FloatingSphere } from "./floating-sphere"
 import { NeonButton } from "./neon-button"
 import { FlipWords } from "./flip-words"
 import { SparklesCore } from "./sparkles"
+import { AnomalousMatterHero } from "./anomalous-matter"
 
 export function HeroAdvanced() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-transparent">
+      <AnomalousMatterHero className="opacity-40" />
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Animated gradient orbs */}

@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { NoiseGradientShader } from "./noise-gradient-shader"
+import { BackgroundPaperShaders } from "./background-paper-shaders"
 
 const timelineItems = [
   {
@@ -53,8 +54,9 @@ export function OrbitalTimeline() {
   }, [isHovering])
 
   return (
-    <section id="timeline" className="py-24 lg:py-32 relative overflow-hidden">
-      <NoiseGradientShader colors={["#030508", "#051015", "#001515"]} className="opacity-70" />
+    <section id="timeline" className="py-24 lg:py-32 relative overflow-hidden bg-transparent">
+      <BackgroundPaperShaders className="opacity-20" />
+      <NoiseGradientShader colors={["#030508", "#051015", "#001515"]} className="opacity-50" />
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-16">
           <p className="text-sm font-medium uppercase tracking-wider text-secondary">Our Journey</p>

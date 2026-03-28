@@ -13,6 +13,7 @@ import {
   Shield
 } from "lucide-react"
 import { PlasmaShader } from "./plasma-shader"
+import { DottedSurface } from "./dotted-surface"
 
 export const BentoGrid = ({
   className,
@@ -128,8 +129,9 @@ const CircuitBackground = () => (
 
 export function BentoGridSection() {
   return (
-    <section className="py-20 px-4 bg-background relative overflow-hidden" id="capabilities">
-      <PlasmaShader className="opacity-50" />
+    <section className="py-20 px-4 bg-transparent relative overflow-hidden" id="capabilities">
+      <DottedSurface className="opacity-30" />
+      <PlasmaShader className="opacity-40" />
       <div className="container mx-auto mb-12">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

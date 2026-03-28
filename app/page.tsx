@@ -13,9 +13,6 @@ import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 import { ShaderBackground } from "@/components/shader-background"
 import { BackgroundBeams } from "@/components/background-beams"
-import { AnomalousMatterHero } from "@/components/anomalous-matter"
-import { DottedSurface } from "@/components/dotted-surface"
-import { BackgroundPaperShaders } from "@/components/background-paper-shaders"
 
 export default function Home() {
   return (
@@ -23,22 +20,13 @@ export default function Home() {
       <ShaderBackground />
       <BackgroundBeams className="opacity-30" />
       <Header />
-      <div className="relative overflow-hidden">
-        <AnomalousMatterHero className="opacity-40" />
-        <HeroAdvanced />
-      </div>
+      <HeroAdvanced />
       <LampSection />
-      <div className="relative overflow-hidden">
-        <DottedSurface className="absolute inset-0 opacity-30" />
-        <BentoGridSection />
-      </div>
+      <BentoGridSection />
       <FeatureCarousel />
       <OrbitingSkills />
       <ProcessSection />
-      <div className="relative overflow-hidden">
-        <BackgroundPaperShaders className="opacity-20" />
-        <OrbitalTimeline />
-      </div>
+      <OrbitalTimeline />
       <PortfolioAdvanced />
       <TestimonialsSection />
       <Partners />
