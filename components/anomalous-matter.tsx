@@ -172,7 +172,9 @@ export function AnomalousMatterHero({ className }: { className?: string }) {
   return (
     <div className={cn("absolute inset-0 z-0 overflow-hidden", className)}>
       <Suspense fallback={null}>
-        <GenerativeArtScene />
+        <div className="absolute right-0 top-0 w-1/2 h-full">
+          <GenerativeArtScene />
+        </div>
       </Suspense>
     </div>
   );
